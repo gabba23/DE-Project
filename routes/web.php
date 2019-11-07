@@ -18,3 +18,9 @@ Route::get('/services', 'PagesController@services');
 route::get('/about', function(){
     return view('pages.about');
 });
+
+Route::resource('posts', 'PostsController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
