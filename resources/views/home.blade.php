@@ -14,7 +14,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                        <a href="/posts/create" class="btn btn-primary">Add medicine</a>
+                        <a href="/posts/create" class="btn btn-primary">Add the medicine</a>
                         <hr>
                         
                     <h3>The list of medicine</h3>
