@@ -15,6 +15,7 @@ class PostsTableSeeder extends Seeder
             'title' => 'post',
             'timesaday' => '2 times a day, morning and evening',
             'beforeafter' => 'before',
+            'daysleft' => '3',
             'user_id' => '1',
         ]);
         $post->save();
@@ -23,6 +24,7 @@ class PostsTableSeeder extends Seeder
             'title' => 'post2',
             'timesaday' => '2 times a day, morning and evening',
             'beforeafter' => 'after',
+            'daysleft' => '1',
             'user_id' => '2',
         ]);
         $post->save();

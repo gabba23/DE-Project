@@ -14,6 +14,8 @@ class Post extends Model
     // TimeStamps
     public $timestamps = true;
 
+    protected $dates = ['expires_at'];
+
     public function user(){
         return $this->belongsTo('App\User');
     }

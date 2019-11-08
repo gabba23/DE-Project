@@ -54,6 +54,7 @@ class PostsController extends Controller
         $post->title = $request->input('title');
         $post->timesaday = $request->input('timesaday');
         $post->beforeafter = $request->input('beforeafter');
+        $post->daysleft = $request->input('daysleft');
         $post->user_id = auth()->user()->id;
         $post->save();
 
@@ -103,6 +104,7 @@ class PostsController extends Controller
         $post->title = $request->input('title');
         $post->timesaday = $request->input('timesaday');
         $post->beforeafter = $request->input('beforeafter');
+        $post->daysleft = $request->input('daysleft');
         $post->save();
 
         return redirect('/home')->with('success', 'Medicine Updated');

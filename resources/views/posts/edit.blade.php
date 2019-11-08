@@ -18,6 +18,12 @@
                     {!!  Form::select('beforeafter', ['B' => 'Before meal', 'A' => 'After meal', 'D' => 'During meal', 'I' => 'Irrelevant' ],  'S', ['class' => 'form-control' ]) !!}
                 </div>
             </div>
+            <div class="form-group">
+                    {!! Form::label('daysleft', 'How long needed to take medicine', ['class' => 'col-lg-3 control-label'] )  !!}
+                    <div class="col-lg-10">
+                    {!!  Form::select('daysleft', ['∞' => 'Indefinitely', 1, 3, 7, 14, 21, 30, 60, 90, 180, 365, ],  'S', ['class' => 'form-control' ]) !!}
+                </div>
+            </div>
             {{Form::hidden('_method', 'PUT')}}
             
             

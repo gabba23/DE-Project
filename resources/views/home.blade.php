@@ -16,6 +16,7 @@
                     @endif
                         <a href="/posts/create" class="btn btn-primary">Add medicine</a>
                         <hr>
+                        
                     <h3>The list of medicine</h3>
                     @if(count($posts) > 0)
                     <table class="table table-striped">
@@ -32,7 +33,7 @@
                                 <td>{{$post->title}}</td>
                                 <td>{{$post->timesaday}}</td>
                                 <td>{{$post->beforeafter}}</td>
-                                <td></td>
+                                <td>{{$post->daysleft}}</td>
                                 <td><a href="/posts/{{$post->id}}/edit" class="btn btn-primary">Edit</a></td>
                                 <td>
                                     {!!Form::open(['action' => ['PostsController@destroy', $post->id],'method' => 'POST', 'class' => 'pull-right'])!!}

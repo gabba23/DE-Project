@@ -18,7 +18,7 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->string('timesaday');
             $table->string('beforeafter');
-            
+            $table->string('daysleft');
             $table->timestamps();
         });
     }
