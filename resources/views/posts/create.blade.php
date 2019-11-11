@@ -16,7 +16,7 @@
                <div class="form-group">
                         {!! Form::label('beforeafter', 'Meal time', ['class' => 'col-lg-2 control-label'] )  !!}
                         <div class="col-lg-10">
-                        {!!  Form::select('beforeafter', ['B' => 'Before meal', 'A' => 'After meal', 'D' => 'During meal', 'I' => 'Irrelevant' ],  'S', ['class' => 'form-control' ]) !!}
+                        {!!  Form::select('beforeafter',['B' => 'Before meal', 'A' => 'After meal', 'D' => 'During meal', 'I' => 'Irrelevant' ], null, ['default' => 'Please select', 'class' => 'form-control']); !!}
                     </div>
                 </div>
                 <div class="form-group">

@@ -19,7 +19,8 @@
                         
                     <h3>The list of medicine</h3>
                     @if(count($posts) > 0)
-                    <table class="table table-striped">
+                    <div style="overflow-x:auto;">
+                    <table class="table table-striped ">
                         <tr>
                             <td>Name</td>
                             <td>Times a day</td>
@@ -41,12 +42,11 @@
                                         {{Form::submit('Delete', ['class' =>'btn btn-danger'])}}
                                     {!!Form::close()!!}
                                 </td>
-                                <td><button type="submit"  class="donate_now btn btn-secondary generalDonation" data-toggle="modal"  data-backdrop="static" data-keyboard="false" data-target="#myModalHorizontal">Information</button></td>
+                                <td><button type="submit"  class="donate_now btn btn-secondary generalDonation" data-toggle="modal"  data-backdrop="static" data-keyboard="false" data-target="#myModalHorizontal"> Information </button></td>
                             </tr>
                             <div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
-                                            <!-- Modal Header -->
                                             <div class="modal-header" style="background: blue">
                                                 
                                                 <h4 class="modal-title" id="myModalLabel" style="color: whitesmoke;">Information about the medication</h4>
@@ -73,6 +73,7 @@
                                     </div>
                         @endforeach
                     </table>
+                </div>
                     @else
                     <p>You have no medicine added</p>
                     @endif
