@@ -2,7 +2,10 @@
 
 @section('content')
 <div class="jumbotron text-center">
-        logo
+
+    <span style="font-size: 6em; color: blue;">
+        <i class="fas fa-pills"></i>
+      </span>
         <h1>MedMe</h1>
         <br>
         <hr>
